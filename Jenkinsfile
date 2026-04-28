@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying Application...'
-                sh 'docker run -d -p 8080:5000 flask-jenkins-app'
+                sh 'docker run -d -p 8082:5000 flask-jenkins-app'
             }
         }
     }
